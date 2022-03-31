@@ -1,0 +1,110 @@
+:root {
+    /********* colors primary ***********/
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /********* colors neutrals ***********/
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very--dark--blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+
+    /********* Text, fonts, weights  ***********/
+    --font-official: 'Outfit', sans-serif;
+    --font-size-paragraph: 18px;
+    --weight-minimun: 300;
+    --weight-midimun: 400;
+    --weight-max: 600;
+}
+
+* {
+    font-family: var(--font-official);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--Very-dark-blue-main-BG);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    box-shadow: 0 0 37px 5px hsl(215deg 51% 16% / 29%),
+    0 0 13px 5px hsl(215deg 51% 16% / 38%);
+
+    /*box-shadow: 0 0 45px hsl(216deg 54% 11% / 57%),*/
+    /*0 0 11px 20px hsl(216deg 54% 11% / 0%);*/
+    /*0 0 12px 19px hsl(216deg 54% 11% / 23%);*/
+    border: 1px solid var(--Very--dark--blue-card-BG);
+    background-color: var(--Very--dark--blue-card-BG);
+    padding: 26px;
+    border-radius: 10px;
+    width: 347px;
+}
+
+.card--container-one img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.card-container-two h1 {
+    font-size: 1.5rem;
+    font-weight: var(--weight-max);
+    padding: 14px 0 0;
+    color: var(--White);
+}
+
+.card-container-two p {
+    font-size: var(--font-size-paragraph);
+    color: var(--Softblue);
+    padding: 14px 0 20px 0;
+    font-weight: var(--weight-minimun);
+}
+
+.card-container-two > .card-container-two--info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    border-bottom: 0.1px solid var(--Very-dark-blue-line);
+}
+
+.card-container-two > div > .card-container-infoEthereum {
+    color: var(--Cyan);
+    padding: 10px 0;
+    display: flex;
+    gap: 5px;
+    font-weight: var(--weight-max);
+}
+
+.card-container-two > div > .card-container-infoClock {
+    color: var(--Softblue);
+    font-weight: var(--weight-minimun);
+    padding: 10px 0;
+    display: flex;
+    gap: 5px;
+}
+
+.card-container-two > .card-container-two--people {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.card-container-two > .card-container-two--people > img {
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.card-container-two > .card-container-two--people > span {
+    color: var(--Softblue);
+    font-weight: var(--weight-minimun);
+}
+
+b {
+    color: var(--White);
+    font-weight: var(--weight-midimun);
+}
