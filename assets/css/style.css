@@ -105,3 +105,9 @@ b {
     color: var(--White);
     font-weight: var(--weight-midimun);
 }
+@media screen  and (max-device-width: 960px) {
+    .card {
+        width: 279px;
+        margin: 20px;
+    }
+}
