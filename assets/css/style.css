@@ -34,9 +34,6 @@ body {
     box-shadow: 0 0 37px 5px hsl(215deg 51% 16% / 29%),
     0 0 13px 5px hsl(215deg 51% 16% / 38%);
 
-    /*box-shadow: 0 0 45px hsl(216deg 54% 11% / 57%),*/
-    /*0 0 11px 20px hsl(216deg 54% 11% / 0%);*/
-    /*0 0 12px 19px hsl(216deg 54% 11% / 23%);*/
     border: 1px solid var(--Very--dark--blue-card-BG);
     background-color: var(--Very--dark--blue-card-BG);
     padding: 26px;
